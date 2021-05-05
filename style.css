@@ -267,16 +267,17 @@ main {
 /***** POPULAIRES *****/
 
 #populaires {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 35%;
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 2em 2em;
     font-size: 1rem; 
 }
-    #populaires h2 {
-        display: inline;
-    }
+    /* #populaires h2 {
+
+    } */
     #populaires .fa-chart-line {
         float: right;
     }
@@ -291,7 +292,7 @@ main {
 
 .main-containeur_aside {
     display: flex;
-    background-color: white;
+    background-color: white; 
     margin: 1em 0;
     border-radius: 15px;
     padding: 0.3em;
