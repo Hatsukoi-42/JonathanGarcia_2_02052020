@@ -2,7 +2,7 @@
 
 * {
     font-family: "Raleway", sans-serif;
-    /* font-size: 1.1vw; */
+    font-size: 1.1vw;
     box-sizing: border-box;
 }
 
@@ -27,7 +27,9 @@ h2 {
     font-weight: 700;
 }
 h3 {
-    display: inline;
+    font-size: 1.1em;
+    font-weight: 700;
+    /* display: inline; */
 }
 
 /***** ***** *****
@@ -105,6 +107,7 @@ header {
     margin-top: 2vw;
 }
     .filtres h3 {
+        display: inline;
         margin-right: 1em;
     }
     .filtres span {
@@ -308,8 +311,35 @@ main {
 .abti_3-1, .abti_3-2 {
     height: 45%;
 }
+
+/***** ***** *****/
+/***** FOOTER *****/
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #f2f2f2;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding: 0 5vw;
+    font-size: 1rem;
+}
+    footer > div {
+        padding: 2em 0;
+    }
+    footer h3 {
+        margin: 1rem 0;
+    }
+    footer a {
+        display: block;
+        padding-top: 0.5em;
+    }
+
+
 /***** ***** *****/
 /***** COLOR *****/
+
+/* #f2f2f2 */
 
 .c-blue {
         color: #0065FC;
