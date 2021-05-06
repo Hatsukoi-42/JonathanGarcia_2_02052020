@@ -1,7 +1,5 @@
 /***** FONT *****/
 
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
 * {
     font-family: "Raleway", sans-serif;
     /* font-size: 1.1vw; */
@@ -25,40 +23,17 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
 h3 {
     display: inline;
 }
 
 /***** ***** *****
 /***** HEADER *****/
-
-/* header {
-    display: flex;
-}
-    header img {
-        margin-left: 5vw;
-    }
-    header nav {
-        width: 100%;
-        padding: 3vw 0; 
-        text-align: right;
-    }
-    header a {
-        height: 100%;
-        margin-right: 6vw;
-        font-weight: 500;
-    }
-        header a:nth-child(1)::before{
-            content:"";
-            width: 150px;
-            position: absolute;
-            margin-left: -15px;
-            top: 0;
-            border-top: 0.2rem solid #0065FC;
-        }
-        header a:nth-child(3) {
-            font-weight: bold;
-        } */
 
 header {
     display: flex;
@@ -98,30 +73,6 @@ header {
     .section-recherche p {
         margin: 0.5em 0;
     }
-
-/* .menu-recherche {
-    display: block;
-    font-size: 1.2rem;
-}
-    .menu-recherche i {
-        background-color: #F2F2F2;
-        border: #F2F2F2 solid 1px;
-        border-radius: 15px 0 0 15px;
-        padding: 1.2rem;
-        font-size: 1em;
-    }
-    .menu-recherche input {
-        border: #F2F2F2 solid 1px;
-        padding: 1.2rem;
-        font: bold 1em "Raleway";
-    }
-    .menu-recherche span {
-        background-color: #0065FC;
-        color: white;
-        border-radius: 0 15px 15px 0;
-        padding: 1em;
-        font-weight: bold;
-    } */
 
 .menu-recherche {
     display: flex;
@@ -208,8 +159,6 @@ main {
 }
 
 .main-container h2 {
-    font-size: 1.1em;
-    font-weight: 700;
     position: relative;
 }
 .main-container h4 {
@@ -275,9 +224,6 @@ main {
     padding: 2em 2em;
     font-size: 1rem; 
 }
-    /* #populaires h2 {
-
-    } */
     #populaires .fa-chart-line {
         float: right;
     }
@@ -318,57 +264,52 @@ main {
 /***** ACTIVITE *****/
 
 #activite {
+    margin-top: 2rem;
     font-size: 1rem;
 }
-
+    #activite h2 {
+        padding: 1em 0.5em;
+    }
 .activite_box {
     display: flex;
+    justify-content: space-between;
     height: 30em;
 }
     .activite_box > article {
         display: flex;
         flex-direction: column;
-        align-content: space-between;/**/
-        justify-content: space-between;/**/
-        margin: 2em;/**/
+        justify-content: space-between;
+        width: 22%;
     }
         .activite_box_img-title {
-
-            border: black solid 1px;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
             height: 100%;
-
-            /* border: black solid 1px; */
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* height: 100%; */
-            /* padding: 0 1em; */
+            border: #F2F2F2 solid 1px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #dddddd;
         }
-            .abti_2-1 {
-                height: 60%;
-            }
-            .abti_2-2 {
-                height: 30%;
-            }
-            .abti_3-1, .abti_3-2 {
-                height: 45%;
-            }
         .activite_box img {
-
             object-fit: cover;
             width: 100%;
-            height: calc(100% - 100rem);
+            min-height: 0;
             flex-grow: 1;
-
-            /* height: 100%;
-            width: 100%;
-            object-fit: cover; */
+            /* height: calc(100% - 100rem); */
         }
-        .activite_box h4 {
-            padding: 1em 0.5em;
-        }
-
+            .activite_box h4 {
+                padding: 1em 0.5em;
+            }
+        
+.abti_2-1 {
+    height: 60%;
+}
+.abti_2-2 {
+    height: 30%;
+}
+.abti_3-1, .abti_3-2 {
+    height: 45%;
+}
 /***** ***** *****/
 /***** COLOR *****/
 
