@@ -2,15 +2,16 @@
 
 * {
     font-family: "Raleway", sans-serif;
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
     box-sizing: border-box;
 }
 
 /***** ***** *****/
 /***** GLOBAL *****/
 
-html, body {
-    overflow: scroll;
+html {
+    font-size: 1.1vw;
+    /* overflow: scroll; */
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 
 h1 {
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 h2 {
     font-size: 1.2em;
@@ -96,6 +97,9 @@ header {
         border: #F2F2F2 solid 1px;
         padding: 0.7em;
         font: bold 1em "Raleway";
+    }
+    .menu-recherche input[type="text"] {
+        font-familoy: "Raleway", sans-serif;
     }
     .menu-recherche a {
         display: flex;
@@ -371,30 +375,102 @@ footer {
 
 @media screen and (max-width: 1200px) {
 
-    .main-container {
+.main-container {
+    flex-direction: column;
+}
+.main-container img {
+    height: 10em !important;
+}
+
+#hebergements {
+    order: 1;
+    width: 100%;
+}
+
+#populaires {
+    width: 100%;
+}
+    #populaires > div {
+        flex-direction: row;
+    }
+    #populaire .main-containeur_aside div{
         flex-direction: column;
     }
-    .main-container img {
-        height: 10em !important;
-    }
-
-    #hebergements {
-        order: 1;
-        width: 100%;
-    }
-
-    #populaires {
-        width: 100%;
-    }
-        #populaires > div {
-            flex-direction: row;
-        }
-        #populaire .main-containeur_aside div{
-            flex-direction: column;
-        }
 
 }
 
 /***** ***** *****/
 /***** QUERIES *****/
 /***** W -  *****/
+
+@media screen and (max-width: 600px) {
+
+html {
+    font-size: 4vw;
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+/***** ***** *****/
+
+header {
+    display: block;
+    position: relative;
+    height: auto;
+}
+    header img {
+        display: block;
+        height: 3em;
+    }
+    header nav a {
+        height: 3em;
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+    }
+    header nav a:nth-child(3) {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header_Link--hover:hover {
+        border-top: none;
+        border-bottom: 0.2rem solid #0065FC;
+    }
+
+.menu-recherche a {
+    border-radius: 1rem;
+    margin-left: -0.8rem;
+    font-size: 0;
+}
+    .menu-recherche a::after {
+        content: "\f002";
+        font-family: "Font Awesome 5 Free";
+        font-size: 1rem;
+        color: white;
+        width: 3rem;
+        text-align: center;
+    }
+
+.filtres h3 {
+    display: block;
+    margin: 2em 0 1em;
+}
+.filtres span {
+    margin: 0.5em;
+}
+
+/***** ***** *****/
+
+.main-containeur_aside{
+    flex-direction: column;
+}
+    .main-containeur_aside img{
+        width: 100%;
+    }
+
+}
+
+/***** ***** *****/
