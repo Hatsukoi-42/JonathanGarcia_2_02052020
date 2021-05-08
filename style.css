@@ -57,11 +57,16 @@ header {
             padding: 0 2.5vw;
             font-weight: 500;
         }
-            header nav a:nth-child(1) {
+            .header_Link--hover:hover {
                 border-top: 0.2rem solid #0065FC;
+                color: #0065FC;
             }
             header nav a:nth-child(3) {
+                color: #0065FC;
                 font-weight: bold;
+            }
+            header nav a:nth-child(3):hover {
+                text-decoration: underline;
             }
 
 /***** ***** *****/
