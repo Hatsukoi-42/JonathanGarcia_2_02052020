@@ -355,7 +355,7 @@ footer {
 /* #f2f2f2 */
 
 .c-blue {
-        color: #0065FC;
+    color: #0065FC;
     }
 .c-blue-sky {
     color: #A8C4FE;
@@ -366,3 +366,35 @@ footer {
 }
 
 /***** ***** *****/
+/***** QUERIES *****/
+/***** W - 1200 *****/
+
+@media screen and (max-width: 1200px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+    .main-container img {
+        height: 10em !important;
+    }
+
+    #hebergements {
+        order: 1;
+        width: 100%;
+    }
+
+    #populaires {
+        width: 100%;
+    }
+        #populaires > div {
+            flex-direction: row;
+        }
+        #populaire .main-containeur_aside div{
+            flex-direction: column;
+        }
+
+}
+
+/***** ***** *****/
+/***** QUERIES *****/
+/***** W -  *****/
