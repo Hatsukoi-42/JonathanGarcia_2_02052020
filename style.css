@@ -375,30 +375,30 @@ footer {
 
 @media screen and (max-width: 1200px) {
 
-.main-container {
-    flex-direction: column;
-}
-
-#hebergements {
-    order: 1;
-    width: 100%;
-}
-
-#populaires {
-    width: 100%;
-}
-    #populaires > div {
-        flex-direction: row;
-    }
-    #populaire .main-containeur_aside div{
+    .main-container {
         flex-direction: column;
     }
 
-}
+    #hebergements {
+        order: 1;
+        width: 100%;
+    }
 
-#hebergement img,
-#populaires img {
-    height: 10em;
+    #populaires {
+        width: 100%;
+    }
+        #populaires > div {
+            flex-direction: row;
+        }
+        #populaire .main-containeur_aside div{
+            flex-direction: column;
+        }
+
+        #hebergement img,
+        #populaires img {
+            height: 10em;
+        }
+
 }
 
 /***** ***** *****/
