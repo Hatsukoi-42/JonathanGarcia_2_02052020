@@ -99,7 +99,7 @@ header {
         font: bold 1em "Raleway";
     }
     .menu-recherche input[type="text"] {
-        font-familoy: "Raleway", sans-serif;
+        font-family: "Raleway", sans-serif;
     }
     .menu-recherche a {
         display: flex;
@@ -527,3 +527,4 @@ footer {
     }
 
 /***** ***** *****/
+}
