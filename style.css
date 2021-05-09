@@ -378,9 +378,6 @@ footer {
 .main-container {
     flex-direction: column;
 }
-.main-container img {
-    height: 10em !important;
-}
 
 #hebergements {
     order: 1;
@@ -397,6 +394,11 @@ footer {
         flex-direction: column;
     }
 
+}
+
+#hebergement img,
+#populaires img {
+    height: 10em;
 }
 
 /***** ***** *****/
@@ -464,13 +466,60 @@ header {
 
 /***** ***** *****/
 
-.main-containeur_aside{
-    flex-direction: column;
+main {
+    padding: 0;
 }
-    .main-containeur_aside img{
-        width: 100%;
+
+    #populaires > div {
+        flex-direction: column;
+    }
+    #populaires img{
+        height: 9em;
+        width: 40%;
+    }
+    .main-containeur_aside{
+        flex-direction: row;
     }
 
+    #hebergements {
+        background-color: white;
+    }
+    #hebergements > div {
+        flex-direction: column;
+    }
+    .main-containeur_standard {
+        width: 100%;
+        /* border: black solid 1px; */
+        border-radius: 1em;
+        box-shadow: 0 0 15px #dddddd;
+    }
+
+/***** ***** *****/
+
+.activite_container {
+    height: auto;
+    flex-direction: column;
 }
+    .activite_container_box {
+        /* flex-direction: row; */
+        width: 100%;
+    }
+    .box_img-title {
+        margin: 1em;
+        border-radius: 1em;
+        box-shadow: 0 0 15px #dddddd;
+    }
+    .activite_container img {
+        height: 9em;
+    }
+
+/***** ***** *****/
+
+footer {
+    flex-direction: column;
+}
+    footer > div {
+        padding: 1em 0; 
+    }
 
 /***** ***** *****/
