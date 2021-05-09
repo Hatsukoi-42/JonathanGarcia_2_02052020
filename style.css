@@ -152,16 +152,16 @@ main {
     box-sizing: border-box;
 }
 
-.main-info i {
-    margin: 2vw 0.5em 0 0;
-    padding: 5px 10px;
-    border: #F2F2F2 solid 2px;
-    border-radius: 25px;
-    color: #0065FC;
-}
-.main-info span {
-    font-size: 0.8rem;
-}
+    .main-info i {
+        margin: 2vw 0.5em 0 0.5em;
+        padding: 5px 10px;
+        border: #F2F2F2 solid 2px;
+        border-radius: 25px;
+        color: #0065FC;
+    }
+    .main-info span {
+        font-size: 0.8rem;
+    }
 
 /***** ***** *****/
 /***** MAIN *****/
@@ -403,7 +403,7 @@ footer {
 
 /***** ***** *****/
 /***** QUERIES *****/
-/***** W -  *****/
+/***** W - 600 *****/
 
 @media screen and (max-width: 600px) {
 
@@ -455,6 +455,10 @@ header {
         width: 3rem;
         text-align: center;
     }
+
+.main-info i {
+    float: left;
+}
 
 .filtres h3 {
     display: block;
