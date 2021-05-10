@@ -24,7 +24,7 @@ h1 {
     font-weight: 700;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 700;
 }
 h3 {
@@ -109,6 +109,7 @@ header {
         color: white;
         border-radius: 0 15px 15px 0;
         padding: 0.7em;
+        font-size: 0.9em;
         font-weight: 600;
     }
 
@@ -147,13 +148,15 @@ header {
 /***** RESULTAT *****/
 
 main {
-    padding: 0 5vw;
+    padding: 0 3vw;
     overflow: hidden;
     box-sizing: border-box;
 }
-
+    .main-info {
+        margin: 1.5em 0.5em;
+    }
     .main-info i {
-        margin: 2vw 0.5em 0 0.5em;
+        margin-right: 0.5em;
         padding: 5px 10px;
         border: #F2F2F2 solid 2px;
         border-radius: 25px;
@@ -196,7 +199,7 @@ main {
 #hebergements {
     display: inline-block;
     background-color: #F2F2F2;
-    width: 60%;
+    width: 65%;
     border-radius: 1em;
     padding: 2em 2em;
     font-size: 1rem;
@@ -224,7 +227,7 @@ main {
 
 .hebergements_afficher-plus {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /***** ***** *****/
@@ -233,7 +236,7 @@ main {
 #populaires {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 32%;
     background-color: #F2F2F2;
     border-radius: 1em;
     padding: 2em 2em;
@@ -264,8 +267,8 @@ main {
     }
     .main-containeur_aside img {
         display: flex;
-        height: 7em;
-        width: 40%;
+        height: 8em;
+        width: 35%;
         margin-right: 1em;
         border-radius: 1em 0 0 1em;
         object-fit: cover;
@@ -288,7 +291,7 @@ main {
 .activite_container {
     display: flex;
     justify-content: space-between;
-    height: 30em;
+    height: 25em;
 }
     .activite_container_box {
         display: flex;
@@ -341,11 +344,11 @@ footer {
     footer > div {
         flex-grow: 1;
         flex-basis: 0;
-        padding: 2em 0;
+        padding: 3em 0;
         text-align: left;
     }
     footer h3 {
-        margin: 1rem 0;
+        margin-bottom: 1rem;
     }
     footer a {
         display: block;
