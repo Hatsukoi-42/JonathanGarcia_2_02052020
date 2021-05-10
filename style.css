@@ -485,6 +485,7 @@ footer {
             -ms-flex-order: 1;
                 order: 1;
         width: 100%;
+        margin-top: 2em;
     }
 
     #populaires {
