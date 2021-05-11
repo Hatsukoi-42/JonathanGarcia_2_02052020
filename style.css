@@ -471,7 +471,7 @@ footer {
 /***** QUERIES *****/
 /***** W - 1200 *****/
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
     .main-container {
         -webkit-box-orient: vertical;
@@ -515,7 +515,7 @@ footer {
 /***** QUERIES *****/
 /***** W - 600 *****/
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 html {
     font-size: 4vw;
