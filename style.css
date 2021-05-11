@@ -9,13 +9,15 @@
 **  GLOBAL  
 */
 
-html {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.1vw;
-
+:root {
     --c-blue: #0065FC;
     --c-blue-light: #DEEBFF;
     --c-gray-light: #F2F2F2;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1vw;
 }
 
 a {
