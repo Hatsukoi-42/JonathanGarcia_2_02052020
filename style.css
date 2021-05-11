@@ -12,6 +12,10 @@
 html {
     font-family: "Raleway", sans-serif;
     font-size: 1.1vw;
+
+    --c-blue: #0065FC;
+    --c-blue-light: #DEEBFF;
+    --c-gray-light: #F2F2F2;
 }
 
 a {
@@ -37,6 +41,18 @@ h3 {
 
 body {
     width: 100%;
+}
+
+/***********
+**  COLOR
+*/
+
+.c-blue {
+    color: var(--c-blue);
+}
+
+.c-gray-light {
+    color: var(--c-gray-light);
 }
 
 /***********
@@ -76,11 +92,11 @@ header {
             font-weight: 500;
         }
             .header_Link--hover:hover {
-                border-top: 0.2rem solid #0065FC;
-                color: #0065FC;
+                border-top: 0.2rem solid var(--c-blue);
+                color: var(--c-blue);
             }
             header nav a:nth-child(3) {
-                color: #0065FC;
+                color: var(--c-blue);
                 font-weight: bold;
             }
             header nav a:nth-child(3):hover {
@@ -112,13 +128,13 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        background-color: #F2F2F2;
+        background-color: var(--c-gray-light);
         border-radius: 15px 0 0 15px;
         padding: 0 1em;
         font-size: 0.8em;
     }
     .menu-recherche input {
-        border: #F2F2F2 solid 1px;
+        border: var(--c-gray-light) solid 1px;
         padding: 0.7em;
         font: bold 0.9em "Raleway";
     }
@@ -133,7 +149,7 @@ header {
             -ms-flex-align: center;
                 align-items: center;
         cursor: pointer;
-        background-color: #0065FC;
+        background-color: var(--c-blue);
         color: white;
         border-radius: 0 15px 15px 0;
         padding: 0.7em;
@@ -151,7 +167,7 @@ header {
     }
     .filtres span {
         display: inline-block;
-        border: #F2F2F2 solid 2px;
+        border: var(--c-gray-light) solid 2px;
         border-radius: 50px;
         margin: 0 0.5em;
     }
@@ -163,10 +179,10 @@ header {
         }
         .filtres i {
             display: relative;
-            background-color: #DEEBFF;
-            color: #0065FC;
-            -webkit-box-shadow: 0 0 0 0.1em #DEEBFF;
-                    box-shadow: 0 0 0 0.1em #DEEBFF;
+            background-color: var(--c-blue-light);
+            color: var(--c-blue);
+            -webkit-box-shadow: 0 0 0 0.1em var(--c-blue-light);
+                    box-shadow: 0 0 0 0.1em var(--c-blue-light);
             border-radius: 50px;
             padding: 1em;
         }
@@ -191,9 +207,9 @@ main {
     .main-info i {
         margin-right: 0.5em;
         padding: 5px 10px;
-        border: #F2F2F2 solid 2px;
+        border: var(--c-gray-light) solid 2px;
         border-radius: 25px;
-        color: #0065FC;
+        color: var(--c-blue);
     }
     .main-info span {
         font-size: 0.8rem;
@@ -242,7 +258,7 @@ main {
 
     #hebergements {
         display: inline-block;
-        background-color: #F2F2F2;
+        background-color: var(--c-gray-light);
         width: 65%;
         border-radius: 1em;
         padding: 2em 1.5em;
@@ -293,7 +309,7 @@ main {
             -ms-flex-direction: column;
                 flex-direction: column;
         width: 32%;
-        background-color: #F2F2F2;
+        background-color: var(--c-gray-light);
         border-radius: 1em;
         padding: 2em 2em;
         font-size: 1rem; 
@@ -402,7 +418,7 @@ main {
                     flex-direction: column;
             overflow: hidden;
             height: 100%;
-            border: #F2F2F2 solid 1px;
+            border: var(--c-gray-light) solid 1px;
             border-radius: 15px;
             -webkit-box-shadow: 0 0 15px #dddddd;
                     box-shadow: 0 0 15px #dddddd;
@@ -439,7 +455,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: var(--c-gray-light);
     margin-top: 3rem;
     padding: 3rem;
     font-size: 1rem;
@@ -460,18 +476,6 @@ footer {
         padding-top: 0.5em;
     }
 
-
-/***********
-**  COLOR
-*/
-
-.c-blue {
-    color: #0065FC;
-}
-
-.c-gray-light {
-    color: #F2F2F2;
-}
 
 /***********
 **  QUERIE
@@ -560,7 +564,7 @@ header {
     }
     .header_Link--hover:hover {
         border-top: none;
-        border-bottom: 0.2rem solid #0065FC;
+        border-bottom: 0.2rem solid var(--c-blue);
     }
 
 .menu-recherche a {
