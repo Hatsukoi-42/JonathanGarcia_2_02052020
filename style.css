@@ -30,15 +30,15 @@ strong {
 
 h1 {
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 h2 {
     font-size: 1.3em;
-    font-weight: 700;
+    font-weight: bold;
 }
 h3 {
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 body {
@@ -144,7 +144,7 @@ header {
         border-radius: 0 15px 15px 0;
         padding: 0.7em;
         font-size: 0.9em;
-        font-weight: 600;
+        font-weight: bold;
     }
 
 .filtres {
