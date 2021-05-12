@@ -406,7 +406,8 @@ footer {
     }
 
 
-/***********
+/*********************
+**********************
 **  QUERIE
 **  W-1200
 */
@@ -429,9 +430,10 @@ footer {
     }
         #populaires > div {
             flex-direction: row;
+            align-content: space-between; /**/
         }
-        #populaire .main-containeur_aside div{
-            flex-direction: column;
+        #populaires .main-containeur_aside {
+            width: 32%;
         }
 
         #hebergement img,
@@ -441,7 +443,8 @@ footer {
 
 }
 
-/***********
+/*********************
+**********************
 **  QUERIE
 **  W-600
 */
@@ -525,8 +528,9 @@ main {
         height: 8.5em;
         width: 40%;
     }
-    .main-containeur_aside{
+    #populaires .main-containeur_aside{
         flex-direction: row;
+        width: 100%;
         margin: 0.3em 0; 
     }
 
