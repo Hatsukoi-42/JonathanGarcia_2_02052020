@@ -167,7 +167,6 @@ header {
             transition: background-color 0.5s ease-out;
         }
         .filtres i {
-            display: relative;
             background-color: #DEEBFF;
             background-color: var(--c-blue-light);
             color: #0065FC;
